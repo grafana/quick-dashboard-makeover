@@ -57,7 +57,7 @@ This table is showing us tons of information that we already know.  The original
 
 1. Edit the *K8s Service Status* panel (hover over the panel's title, click the three vertical dots to show the context menu, and then click *Edit*)
 2. Switch the Visualization Type from *Table* to *Stat*
-3. In the panel options, change *Show* to All values
+3. In the Value options, change *Show* to All values
 4. Change the *Color mode* to Background Solid.
 5. Change the Thresholds colors and value:
     * For the Base threshold, change the color to Orange by clicking on the green circle
