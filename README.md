@@ -29,21 +29,21 @@ If you don't have Grafana, you have two options
 
 ---
 
-## Exercices
+## Exercises
 
 This repo comes with 2 exerices:
 
-1. "Quick dashboard makeover": a guided exercice where we will change an ugly dashboard into a nice looking one
+1. "Quick dashboard makeover": a guided exercise where we will change an ugly dashboard into a nice looking one
 2. "KitchenOps": an individual challenge. Same idea but you are on your own !
 
-You will find the exercices in the folder `Exercices`.
+You will find the exercises in the folder `exercises`.
 
 ---
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-This repo is a fork of the Extreme Dashboard Makeover developed by the Field Engineering team at Grafana Labs. It simplifies the workflow to import them as it relies only on a fake data generator (no need to have access to the data sources). But it makes sacrifice on the "Library panel" exercice as the distribution is made differently.
+This repo is a fork of the Extreme Dashboard Makeover developed by the Field Engineering team at Grafana Labs. It simplifies the workflow to import them as it relies only on a fake data generator (no need to have access to the data sources). But it makes sacrifice on the "Library panel" exercise as the distribution is made differently.
 
 Some useful ressources from Grafana Labs and friends:
 
