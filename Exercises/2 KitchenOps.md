@@ -4,7 +4,7 @@
 Follow these steps:
 
 1. Add the data source
-    - **You probably already have one if you followed the first exercice. If so then skip to step 2**
+    - **You probably already have one if you followed the first exercise. If so then skip to step 2**
     - Click the menu button (☰) at the top left, and then click on *Data sources*.
     - Click on *Add new data source*
     - Search for *TestData* and click on it
@@ -19,15 +19,15 @@ Follow these steps:
 Our dashboard already has useful information but it's difficult to read. **Let's make it better**
 
 ## Challenge description
-You have been recently hired to run your restaurant's KitchenOps program. The restaurant is so close to its 5th Michelin star, you can taste it !
+You have been recently hired to run your restaurant's KitchenOps program. The restaurant is so close to its 3rd Michelin star, you can taste it !
 
-One way to attain that 5th star is to deliver consistently perfect results in meal preparation. This means having complete control over:
+One way to attain that 3rd star is to deliver consistently perfect results in meal preparation. This means having complete control over:
 * Oven, stovetop, and grill temperature settings
 * Shelflife of the freshest ingredients (and the soup!)
 * Consistency of food preparation times per meal time
 * and more.
 
-Being in the 4-star tier, this restaurant has recently invested in IoT telemetry to track these sorts of things, and the restaurant owner's IT person has already created a set of library panels for these sensors. 
+Being in the 2-star tier, this restaurant has recently invested in IoT telemetry to track these sorts of things, and the restaurant owner's IT person has already created a set of library panels for these sensors. 
 
 All we have to do is present them in a way that is easy for the kitchen staff to understand and attractive enough - if they were to peek into the kitchen - for an anonymous Michelin inspector to notice !
 
