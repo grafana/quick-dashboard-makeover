@@ -28,9 +28,9 @@ We will edit the Error Rates panel first.  We want to add context to what error 
 
 1. Edit the *Error Rates* panel (hover over the panel's title, click on the three vertical dots at the top right, and then click *Edit*)
 2. Change the Visualization type
-    - At the top right, switch the Visualization Type from *Graph (Old)* to *Stat*
+    - At the top right, switch the Visualization Type from *Time Series* to *Stat*
 3. Change the style, under *Stat styles*:
-    - **It's easier to find the options by looking at their names. Type the name *Stat style* to easily find what you are looking for**
+    - **It's easier to find the options by searching for their names. Type the name *Stat style* to easily find what you are looking for**
     - Change *Orientation* from Auto to Horizontal.
     - Change *Color Mode* from Value to Background Gradient.
 4. Customize colors:
@@ -38,7 +38,7 @@ We will edit the Error Rates panel first.  We want to add context to what error 
     - Click on the trash icon 🗑 to remove that empty default mapping.
     - Click *Add a New Mapping* and then *Range*. Set range from 0 to 1 with Display Text of *OK*. Set color to Blue.
     - Click *Add a New Mapping* and then *Range*. Set range from 1 to 2 with Display Text of *Degraded*. Set color to Yellow.
-    - Click *Add a New Mapping* and then *Range*. Set range from 2 to 100 (or empty for infinity) with Display Text of *SLO Violation*. Set color to Orange.
+    - Click *Add a New Mapping* and then *Range*. Set range from 2 to 100 (or more) with Display Text of *SLO Violation*. Set color to Orange.
     - Click on *Update*
 
     The value mapping settings should look like this:
@@ -57,7 +57,7 @@ This table is showing us tons of information that we already know.  The original
 
 1. Edit the *K8s Service Status* panel (hover over the panel's title, click the three vertical dots to show the context menu, and then click *Edit*)
 2. Switch the Visualization Type from *Table* to *Stat*
-3. In the panel options, change *Show* to All values
+3. In the Value options, change *Show* to All values
 4. Change the *Color mode* to Background Solid.
 5. Change the Thresholds colors and value:
     * For the Base threshold, change the color to Orange by clicking on the green circle
@@ -66,9 +66,9 @@ This table is showing us tons of information that we already know.  The original
     * Add a Value mapping, setting the value condition to 1, and the display text to *UP*.
     * Add a second Value mapping, condition 0 and display text *DOWN*.
 7. It's hard to see the title. This come from the data. In this case, we don't want to change the data. Let's imagine we can't change the table from the query. We will transform the data:
-    - On the left side, under the visualization, click on *Transform*
+    - On the left side, under the visualization, click on *Transformations*
     - Search for *Organize fields*
-    - You can hide the fields. Hide them all except *Value* and *container*
+    - You can hide the fields by clicking on the small eye close to the name of the field. Hide them all except *Value* and *container*
 8. Click *Apply* to the leave the edit mode of that panel.
 The panel should look similar to what is shown below:
 
@@ -101,25 +101,23 @@ The Latency panel seems ok but it was not updated
 
 1. Edit the *Latency for Sockshop App* panel (hover over the panel's title, click the three vertical dots to show the context menu, and then click *Edit*)
 
-2. Switch the Visualization Type from *Graph (Old)* to *Time Series*
-
-3. Let's make it easier to see the differences between the lines:
+2. Let's make it easier to see the differences between the lines:
     - We notice that the two blue colors are just too similar, and we want to make it obvious. So, right from the dashboard, we click on the blue line associated with Orders in the legend, and a set of default colors appear. Choose Purple.
     - Change the *graph styles > Line width* to 2
     - change the *Fill opacity* to 0
     
     ![Graph styles](img/Graph-styles.png)
 
-4. Click *Apply*.
+3. Click *Apply*.
 
-5. Save the dashboard.
+4. Save the dashboard.
 
-## Convert the 'Server Request Rates' panel from the deprecated "graph" panel to a bar gauge panel
+## Convert the 'Server Request Rates' panel from graph to a bar gauge panel
 
 Like our first panel, we want context to understand what good looks like. Knowing our internal data patterns, we want to avoid service overload conditions where end-user performance can be affected.
 1. Edit the *Server Request Rates* panel (hover over the panel's title, click the three vertical dots to show the context menu, and then click *Edit*)
 
-2. Switch the Visualization Type from *Graph (Old)* to *Bar Gauge*
+2. Switch the Visualization Type from *Time Series* to *Bar Gauge*
 
 3. Change the Panel Title to *Server Request Rates per Second* (i.e. add "per Second" for clarity)
 
