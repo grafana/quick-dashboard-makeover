@@ -8,9 +8,10 @@ We will be revamping the following dashboard.
 Follow these steps:
 
 1. Add the data source
-    - Click the menu button (☰) at the top left, and then click on *Data sources*.
+    - Click the menu button (☰) at the top left, and then click on *Connections* -> *Data sources*.
     - Click on *Add new data source*
     - Search for *TestData* and click on it
+    - Press *Save & test*, you should have a confirmation "✅ Data source is working" 
 2. Import the dashboard
     - Click the menu button (☰) at the top left, and then click on *Dashboards*.
     - On the Dashboards screen, click the *New* button and then click *Import*.
@@ -48,7 +49,7 @@ We will edit the Error Rates panel first.  We want to add context to what error 
 5.  Change the Panel Title to *SLO Status(Errors) per Data Center*
     - Search for Title, or clear your search, it will be the first option
 6.  Click on the *Apply* blue bottom at the top right
-7.  Save the dashboard by clicking at the save icon 💾 in the top bar, on the right side
+7.  Save the dashboard by clicking the "Save dashboard" button in the top bar, on the right side. Add an optional note, then press "Save".
 
 > Grafana dashboards are versioned. Saving frequently makes it easier to cancel changes and differentiate the modifications.
 
@@ -65,16 +66,15 @@ This table is showing us tons of information that we already know.  The original
 6. Change the *value mappings*:
     * Add a Value mapping, setting the value condition to 1, and the display text to *UP*.
     * Add a second Value mapping, condition 0 and display text *DOWN*.
-7. It's hard to see the title. This come from the data. In this case, we don't want to change the data. Let's imagine we can't change the table from the query. We will transform the data:
-    - On the left side, under the visualization, click on *Transformations*
+7. It's hard to see the title. This comes from the data. In this case, we don't want to change the data. Let's imagine we can't change the table from the query. We will transform the data:
+    - On the left side, under the visualization, click on *Transformations* -> *Add transformation*
     - Search for *Organize fields*
     - You can hide the fields by clicking on the small eye close to the name of the field. Hide them all except *Value* and *container*
-8. Click *Apply* to the leave the edit mode of that panel.
-The panel should look similar to what is shown below:
+8. The panel should look similar to what is shown below:
 
     ![K8s Service Status](img/k8s-status-stat.png)
 
-9.  Save the dashboard by clicking at the save icon 💾 in the top bar, on the right side
+9.  Save the dashboard by clicking the "Save dashboard" button in the top bar, on the right side
 
 ## Convert the 'Customer Activity' panel from a stat panel to a geomap
 This one is a mess. I've been told that this data is from [Loki](https://grafana.com/oss/loki/), our logging tool, and represents the number of hits coming from each geographic region. It is colorful, but I have a very difficult time interpreting the information.  Let's change the visualization to a map!
@@ -82,7 +82,7 @@ This one is a mess. I've been told that this data is from [Loki](https://grafana
 
 2. Switch the Visualization Type from *Stat* to *Geomap*
 
-3. We want to add markers on the map.  Again using the *Search options* in the top right, find *Map layers* and click on Layer 1 *markers*.
+3. We want to add markers on the map.  Again using the *Search options* in the top right, find the existing layer under *Map layers*,  "Layer 1 *markers*".
 
 4. We want a lookup of the country by our *geoip_country_code* field.
     - To do this, under *Location Mode*, click *Lookup*
@@ -92,7 +92,7 @@ This one is a mess. I've been told that this data is from [Loki](https://grafana
 
 6. Change Color from *Fixed color* to *Value #Hits by geolocation*.
 
-7. Click Apply to the leave edit mode of that Panel.
+7. Save the dashboard by clicking the "Save dashboard" button in the top bar, on the right side. Add an optional note, then press "Save".
 
 
 ## Improve the 'Latency for Sockshop App' panel
@@ -108,9 +108,7 @@ The Latency panel seems ok but it was not updated
     
     ![Graph styles](img/Graph-styles.png)
 
-3. Click *Apply*.
-
-4. Save the dashboard.
+3. Save the dashboard by clicking the "Save dashboard" button in the top bar, on the right side. Add an optional note, then press "Save".
 
 ## Convert the 'Server Request Rates' panel from graph to a bar gauge panel
 
@@ -129,11 +127,12 @@ Like our first panel, we want context to understand what good looks like. Knowin
     * Change the base color from Green to Blue
     * Change the 2nd color from Red to Yellow and the threshold level from 80 to 45.
     * Add a third threshold level, 55.  Set color to Orange.
-    * Select Apply to apply your panel settings.
 
 Below is what your panel should look like:
 
 ![Webserver Request Rates](img/webserver-request-rates.png)
+
+6. Save the dashboard by clicking the "Save dashboard" button in the top bar, on the right side. Add an optional note, then press "Save".
 
 ## Add our company logo
 For a bit of flair, we'd like to add our company logo.  To do so:
@@ -146,8 +145,9 @@ For a bit of flair, we'd like to add our company logo.  To do so:
     <center><img align="center" src="https://i.pinimg.com/originals/74/a0/a5/74a0a51848fb3717c671598dc675c654.jpg" ></center>
     ```
 
-5. Remove the Panel Title, Click on _Transparent Background_ and click *Apply*.
-6. Size the panel appropriately.
+5. Remove the Panel Title, Toggle the  _Transparent Background_ to enabled.
+6. Save the dashboard by clicking the "Save dashboard" button in the top bar, on the right side. Add an optional note, then press "Save".
+7. Size the panel appropriately.
 
 ## Arrange our panels
 Finally, we need to arrange our panels to improve readability. Here is an example. Feel free to play around !
